@@ -46,7 +46,10 @@
   }
 
   .bookcard-imagebox{
+    @media(max-width:450px) {
     height: 250px !important;
+      
+    }
   }
 
   .book-card-title {

@@ -510,8 +510,10 @@ main .scroll-up {
 .room-book-card:hover {
   transform: rotateY(15deg);
 }
-.room-book-card .bookcard-imagebox {
-  height: 250px !important;
+@media (max-width: 450px) {
+  .room-book-card .bookcard-imagebox {
+    height: 250px !important;
+  }
 }
 @media (max-width: 450px) {
   .room-book-card .book-card-title {
