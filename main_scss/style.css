@@ -1586,6 +1586,41 @@ body {
   padding: 3rem 0;
   background-color: rgba(0, 0, 0, 0.89);
 }
+@media (max-width: 1000px) {
+  .footer1 {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contacts__heading {
+  font-size: 24px;
+  font-weight: 600;
+}
+@media (max-width: 450px) {
+  .contacts__heading {
+    font-size: 18px;
+  }
+}
+.contacts__text {
+  font-size: 14px;
+  color: rgb(218, 209, 209);
+}
+@media (max-width: 450px) {
+  .contacts__text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 1000px) {
+  .contacts {
+    text-align: center;
+  }
+}
 
 .links-box {
   display: flex;
@@ -1594,6 +1629,29 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
+.links-box__heading {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #917A5A;
+}
+@media (max-width: 450px) {
+  .links-box__heading {
+    font-size: 18px;
+  }
+}
+.links-box__text {
+  font-size: 14px;
+  color: rgb(218, 209, 209);
+}
+@media (max-width: 450px) {
+  .links-box__text {
+    font-size: 12px;
+  }
+}
+.links-box__text:hover {
+  color: #917A5A;
+}
 
 .footer2 {
   background-color: rgb(0, 0, 0);
@@ -1601,9 +1659,16 @@ body {
   justify-content: space-between;
   padding: 3rem 13rem;
 }
+@media (max-width: 1000px) {
+  .footer2 {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
 @media (max-width: 450px) {
   .footer2 {
-    padding: 3rem 10rem;
+    padding: 3rem 3rem;
   }
 }
 .footer2__text {
@@ -1611,14 +1676,54 @@ body {
   flex-direction: column;
   font-size: 14px;
 }
+@media (max-width: 1000px) {
+  .footer2__text {
+    width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .footer2__text {
+    font-size: 11px;
+    text-align: center;
+  }
+}
+.footer2__icons {
+  border: 1px solid red;
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 1000px) {
+  .footer2__icons {
+    width: 400px;
+  }
+}
 .footer2__icons i {
   width: 50px;
   height: 50px;
   font-size: 24px;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  color: white;
+  color: #917A5A;
+  background-color: white;
+  transition: transform 0.5s ease;
+}
+@media (max-width: 450px) {
+  .footer2__icons i {
+    font-size: 15px;
+    width: 30px;
+    height: 30px;
+  }
+}
+.footer2__icons i:hover {
+  transform: translateY(-5px);
   background-color: #917A5A;
+  color: white;
 }
 .footer2 a {
   text-decoration: none;
