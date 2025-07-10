@@ -454,7 +454,7 @@ body {
 }
 @media (max-width: 450px) {
   .room-book-card .book-card-title {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
 .room-book-card img {
@@ -540,7 +540,7 @@ body {
 
 @media (max-width: 450px) {
   .ratings i {
-    font-size: 11px;
+    font-size: 9px;
   }
 }
 
@@ -550,6 +550,12 @@ body {
   padding: 10px;
   margin-bottom: 1rem;
 }
+@media (max-width: 450px) {
+  .book-card-feature-box {
+    padding: 3px;
+    gap: 10px;
+  }
+}
 
 .book-card-feature {
   padding: 10px;
@@ -557,9 +563,20 @@ body {
   background-color: #f1e4d2;
   border-radius: 9px;
 }
+@media (max-width: 450px) {
+  .book-card-feature {
+    font-size: 9px;
+    padding: 9px;
+  }
+}
 
 .book-card-text {
   margin: 1rem;
+}
+@media (max-width: 450px) {
+  .book-card-text {
+    font-size: 10px;
+  }
 }
 
 .book-card-price-box {
@@ -574,6 +591,11 @@ body {
   font-weight: 700;
   color: #917A5A;
 }
+@media (max-width: 450px) {
+  .book-card-price {
+    font-size: 23px;
+  }
+}
 
 .book-card-btn {
   background-color: #917A5A;
@@ -582,6 +604,11 @@ body {
   padding: 10px 20px;
   font-weight: 700;
   text-decoration: none;
+}
+@media (max-width: 450px) {
+  .book-card-btn {
+    padding: 8px 16px;
+  }
 }
 .book-card-btn:hover {
   background-color: #F5F4F1;
@@ -1052,12 +1079,27 @@ body {
     row-gap: 2rem;
   }
 }
+@media (max-width: 450px) {
+  .offer-box {
+    width: 88%;
+  }
+}
 .offer-box__info {
   height: 100%;
   width: 65%;
 }
+@media (max-width: 450px) {
+  .offer-box__info {
+    width: 90%;
+  }
+}
 .offer-box__title {
   margin-bottom: 1.5rem;
+}
+@media (max-width: 450px) {
+  .offer-box__title {
+    font-size: 20px;
+  }
 }
 .offer-box__btn {
   width: 150px;
@@ -1464,6 +1506,11 @@ body {
     max-width: 400px;
   }
 }
+@media (max-width: 450px) {
+  .location-card {
+    width: 320px;
+  }
+}
 .location-card__image-box {
   height: 40%;
   overflow: hidden;
@@ -1479,6 +1526,10 @@ body {
 .location-card__info {
   margin-top: 3rem;
   padding: 30px;
+}
+.location-card__info ul li {
+  font-size: 13px;
+  padding: 0 10px;
 }
 .location-card__title {
   color: #32220B;
@@ -1517,6 +1568,11 @@ body {
   background-color: #917A5A;
   border: 4px solid white;
   transition: transform 1s ease;
+}
+@media (max-width: 450px) {
+  .location-card i {
+    top: 30%;
+  }
 }
 
 .location-carousel {
@@ -1688,7 +1744,6 @@ body {
   }
 }
 .footer2__icons {
-  border: 1px solid red;
   display: flex;
   -moz-column-gap: 10px;
        column-gap: 10px;

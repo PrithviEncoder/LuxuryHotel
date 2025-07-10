@@ -258,14 +258,23 @@
         flex-direction: column;
         row-gap: 2rem;
     }
+    @media(max-width:450px) {
+     width: 88%;
+  }
 
     &__info {
         height: 100%;
         width: 65%;
+        @media(max-width:450px) {
+    width: 90%;
+  }
     }
 
     &__title {
         margin-bottom: 1.5rem;
+        @media(max-width:450px) {
+    font-size: 20px;
+  }
     }
 
     &__btn {

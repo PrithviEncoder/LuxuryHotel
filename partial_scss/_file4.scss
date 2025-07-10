@@ -245,6 +245,9 @@
     @media(max-width:755px) {
         max-width: 400px;
     }
+    @media(max-width:450px) {
+        width:320px;
+  }
 
     &__image-box {
         height: 40%;
@@ -263,6 +266,11 @@
     &__info {
         margin-top: 3rem;
         padding: 30px;
+
+        ul li{
+            font-size: 13px;
+            padding: 0 10px;
+        }
     }
 
     &__title {
@@ -305,6 +313,9 @@
         background-color: $primary-color;
         border: 4px solid white;
         transition: transform 1s ease;
+        @media(max-width:450px) {
+      top:30%
+  }
     }
 
 }
@@ -486,7 +497,6 @@
     }
 
     &__icons {
-        border: 1px solid red;
         @include flex-horizontal(10px);
 
         @media(max-width:1000px) {

@@ -51,7 +51,7 @@
 
   .book-card-title {
     @media(max-width:450px) {
-      font-size: 15px;
+      font-size: 13px;
     }
   }
 
@@ -152,7 +152,7 @@
 
 .ratings i {
   @media(max-width:450px) {
-    font-size: 11px;
+    font-size: 9px;
   }
 }
 
@@ -161,6 +161,11 @@
   gap: 15px;
   padding: 10px;
   margin-bottom: 1rem;
+
+  @media(max-width:450px) {
+    padding: 3px;
+    gap:10px;
+  }
 }
 
 .book-card-feature {
@@ -168,10 +173,17 @@
   color: $primary-color;
   background-color: #f1e4d2;
   border-radius: 9px;
+  @media(max-width:450px) {
+    font-size: 9px;
+    padding: 9px;
+  }
 }
 
 .book-card-text {
   margin: 1rem;
+  @media(max-width: 450px){
+    font-size: 10px;
+  }
 }
 
 .book-card-price-box {
@@ -185,6 +197,9 @@
   font-size: 28px;
   font-weight: 700;
   color: $primary-color;
+  @media(max-width:450px) {
+    font-size: 23px;
+  }
 }
 
 .book-card-btn {
@@ -194,6 +209,9 @@
   padding: 10px 20px;
   font-weight: 700;
   text-decoration: none;
+  @media(max-width:450px) {
+    padding: 8px 16px;;
+  }
 
   &:hover {
     background-color: $bg-light;
