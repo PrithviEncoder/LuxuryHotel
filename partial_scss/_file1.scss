@@ -1,0 +1,462 @@
+@use './variable' as *;
+@use './mixin' as *;
+
+body {
+  background: $bg-light;
+}
+
+#section1 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.icon-color {
+  color: $primary-color;
+}
+
+.dropdown {
+  &:hover .dropdown-menu {
+    display: block;
+  }
+
+  &-menu {
+    position: absolute;
+    z-index: 3;
+  }
+}
+
+.book,
+.search {
+  color: $text-light;
+}
+
+.book {
+  width: 150px;
+  border: 1px solid $text-light;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.search {
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.box {
+  width: 85%;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.navbar {
+  height: 90px;
+  width: 100vw;
+  position: fixed;
+  background-color: $heading-bg;
+  top: 0;
+  z-index: 1000;
+
+  &-nav {
+    width: 100%;
+    display: flex;
+    color: $text-light;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+#bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+.heading {
+  position: absolute;
+  z-index: 1;
+  padding: 30px;
+  top: 90px;
+  width: 100vw;
+  height: 90%;
+  background-color: $heading-bg;
+  padding-top: 50px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  width: 70%;
+  margin-bottom: 1.8rem;
+}
+
+.hero-btn1 {
+  width: 270px;
+  background-color: $primary-color;
+  color: rgb(209, 202, 202);
+  padding: 20px 30px;
+  border-radius: 40px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: transform 0.4s ease;
+
+  &:hover {
+    background-color: $primary-color;
+    transform: translateY(-3px);
+  }
+}
+
+.hero-btn2 {
+  width: 270px;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: 4px solid white;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  &:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+
+}
+
+
+.hero-features,
+.hero-actions,
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  margin-bottom: 40px;
+}
+
+.date-form {
+  padding: 15px 10px;
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .stat-number {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+}
+
+.hero-card {
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  color: white;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 20px 0;
+
+  & input {
+    background-color: transparent;
+    backdrop-filter: blur(0.25rem);
+    border: 1px solid gray;
+    color: white;
+    padding: 10px 5px;
+  }
+
+  & select {
+    background-color: transparent;
+    backdrop-filter: blur(0.25rem);
+    border: 1px solid gray;
+    color: white;
+    padding: 10px 5px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+}
+
+// section 1 end
+
+#section2 {
+  width: 100vw;
+  background-color: $bg-light;
+}
+
+.discover-box {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 87%;
+  margin: 50px auto;
+}
+
+.discover-image {
+  width: 700px;
+  height: 500px; //it solved flex-wrap issue 
+
+  position: relative;
+
+  .discover-img1,
+  .discover-img2 {
+    border-radius: 8px;
+    width: 400px;
+    position: absolute;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  .discover-img1 {
+    height: 340px;
+    top: 20px;
+    left: 30px;
+  }
+
+  .discover-img2 {
+    top: 200px;
+    left: 220px;
+    border: 4px solid $text-light;
+  }
+}
+
+.discover-text {
+  width: 770px;
+
+  h5 {
+    color: $primary-color;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 2;
+  }
+}
+
+.discover-feature-box1,
+.discover-feature-box2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.discover-feature-box {
+  display: flex;
+  align-items: flex-start;
+  column-gap: 20px;
+  width: 46%;
+
+  h {
+    color: darken($primary-color, 10%);
+  }
+
+  p {
+    color: lighten($primary-color, 10%);
+  }
+}
+
+.discover-icon {
+  padding: 10px;
+  background-color: #e7daca;
+  border-radius: 10px;
+}
+
+#discover-btn {
+  width: 200px;
+  padding: 15px 20px;
+  background-color: $primary-color;
+  border-radius: 8px;
+  color: $text-light;
+  border: 1px solid $text-light;
+
+  &:hover {
+    color: $primary-color;
+    background-color: $text-light;
+    border-color: $primary-color;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-stats {
+    margin-top: 2rem;
+  }
+
+  #section1 {
+    height: 120vh;
+  }
+
+  .hero-text h1 {
+    font-size: 22px;
+  }
+
+  .hero-text p {
+    font-size: 15px;
+  }
+
+  .heading {
+    padding: 0;
+  }
+
+  .hero-stats {
+    margin: 0;
+    padding: 0;
+  }
+
+  #bg-video {
+    height: 110%;
+  }
+
+  .heading {
+    height: 100%;
+  }
+
+}
+
+@media (max-width: 992px) {
+  .book {
+    display: none;
+  }
+
+  .heading {
+    padding: 0;
+  }
+}
+
+@media(max-width:770px) {
+  .hero-text h1 {
+    font-size: 18px;
+  }
+
+  .hero-text p {
+    font-size: 10px;
+  }
+
+  .purecounter {
+    font-size: 14px;
+  }
+
+  .stat-label {
+    font-size: 11px;
+  }
+
+  .stat-number {
+    font-size: 13px;
+  }
+
+  .hero-stats {
+    flex-wrap: wrap;
+    column-gap: 10px;
+  }
+
+  .discover-box {
+    width: 100%;
+  }
+
+  .discover-text {
+    padding: 0 30px;
+  }
+
+  .discover-image {
+    width: 100%;
+
+    .discover-img1,
+    .discover-img2 {
+      width: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .discover-img1 {
+      height: 250px;
+    }
+  }
+}
+
+@media(max-width:570px) {
+  .discover-image {
+    padding: 20px;
+    width: 100%;
+    height: 350px;
+
+    .discover-img1,
+    .discover-img2 {
+      width: 40%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .discover-img1 {
+      height: 160px;
+      top: 150px;
+      left: 23%;
+    }
+
+    .discover-img2 {
+      top: 62%;
+    }
+  }
+}
+
+@media (max-width:450px){
+  .discover-image {
+    padding: 20px;
+    width: 100%;
+    height: 350px;
+
+    .discover-img1,
+    .discover-img2 {
+      width: 40%;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .discover-img1 {
+      height: 130px;
+      top: 150px;
+      left: 20%;
+    }
+
+    .discover-img2 {
+      top: 70%;
+      left: 45%;
+    }
+  }
+}

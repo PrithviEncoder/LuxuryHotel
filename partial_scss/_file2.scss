@@ -1,0 +1,441 @@
+@use './variable' as *;
+@use './mixin' as *;
+
+#section3 {
+  width: 100vw;
+  margin-top: 7rem;
+}
+
+.rooms-card1 {
+  display: flex;
+  width: 100%;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rooms-box {
+  width: 85%;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+
+  .hr {
+    width: 100px;
+    border-radius: 10px;
+    border: 3px solid $primary-color;
+    margin-bottom: 20px;
+  }
+}
+
+.roombox-text {
+  font-size: 10px;
+}
+
+.room-book-card {
+  width: 670px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 1s ease;
+
+
+  &:hover {
+    transform: rotateY(15deg);
+  }
+
+  .bookcard-imagebox{
+    height: 250px !important;
+  }
+
+  .book-card-title {
+    @media(max-width:450px) {
+      font-size: 15px;
+    }
+  }
+
+  img {
+    width: 100%;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.rooms-card-group {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.group-card {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 1s ease;
+  overflow: hidden;
+
+  &:hover {
+    transform: rotateY(20deg);
+  }
+
+  &__image {
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+  }
+
+  &__card-title {
+    color: $primary-color;
+  }
+
+  &__card-text {
+    font-size: small;
+  }
+
+  &__price-box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-size: 23px;
+    font-weight: 700;
+    color: $primary-color;
+  }
+
+  &__btn {
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+
+    &:hover {
+      color: white;
+      background-color: $primary-color;
+    }
+  }
+
+  &__features {
+    width: 200px;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  &__feature-box {
+    color: $primary-color;
+  }
+
+}
+
+.title-star-box {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.book-card-title {
+  color: #32220B;
+}
+
+.ratings {
+  color: #FFC107;
+}
+
+.ratings i {
+  @media(max-width:450px) {
+    font-size: 11px;
+  }
+}
+
+.book-card-feature-box {
+  display: flex;
+  gap: 15px;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+.book-card-feature {
+  padding: 10px;
+  color: $primary-color;
+  background-color: #f1e4d2;
+  border-radius: 9px;
+}
+
+.book-card-text {
+  margin: 1rem;
+}
+
+.book-card-price-box {
+  display: flex;
+  width: 95%;
+  margin: 1rem;
+  justify-content: space-between;
+}
+
+.book-card-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: $primary-color;
+}
+
+.book-card-btn {
+  background-color: $primary-color;
+  border-radius: 20px;
+  color: $text-light;
+  padding: 10px 20px;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $bg-light;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+  }
+}
+
+.rooms-card2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 88%;
+  margin-top: 3rem;
+}
+
+.square-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 1s ease;
+
+  &:hover {
+    transform: rotateX(15deg);
+  }
+
+  &__image-box {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__image {
+    transition: all 0.4s ease;
+    height: 150px;
+
+    &:hover {
+      transform: scale(1.05);
+      background-color: rgba(27, 27, 228, 0.4);
+    }
+  }
+
+  &__screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: background-color 0.4s ease;
+
+    &:hover {
+      opacity: 1;
+      background-color: #3690E7CC;
+      font-size: 40px;
+      color: white;
+    }
+  }
+
+  &__title {
+    color: $primary-color;
+  }
+
+  &__price-box {
+    font-size: 22px;
+    font-weight: 700;
+    color: $primary-color;
+    margin-bottom: 1rem;
+  }
+
+  &__features {
+    display: flex;
+    gap: 1rem;
+    color: $primary-color;
+
+  }
+
+  &__btn {
+    width: 280px;
+    padding: 16px 20px;
+    border: 1px solid white;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 25px;
+    font-weight: 700;
+    margin-top: 2.5rem;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 5px 40px #3690E7CC;
+    }
+  }
+
+}
+
+//section 3end here
+#section4 {
+  width: 100vw;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+}
+
+.amenities {
+  @include flex-vertical(2rem);
+  margin: auto;
+
+  &__heading {
+    color: $text-color;
+  }
+
+  &__hr {
+    width: 100px;
+    border: 3px solid $primary-color;
+    border-radius: 10px;
+  }
+
+  &__desc {
+    color: $text-color;
+
+    @media(max-width:700px) {
+      font-size: 11px;
+      padding: 10px 20px;
+    }
+
+    @media(max-width:450px) {
+      font-size: 9px;
+    }
+  }
+
+  &__card-box {
+    width: 83%;
+    @include flex-horizontal(20px);
+    row-gap: 40px;
+  }
+}
+
+.amenities-card {
+  @include flex-vertical(20px);
+  align-items: start !important;
+  width: 675px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 28px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: transform 0.7s ease;
+
+  &:hover {
+    border-top: 4px solid $text-color;
+    transform: translateY(-10px);
+
+    & .amenities-card__feature {
+      background-color: $text-color;
+      color: white;
+      transform: rotateX(360deg);
+    }
+
+  }
+
+  &__heading {
+    color: $text-color;
+
+    @media(max-width:545px) {
+      font-size: 20px;
+    }
+
+    @media(max-width:450px) {
+      font-size: 14px;
+    }
+  }
+
+  &__icon {
+    color: $text-color;
+    padding: 20px;
+    background-color: #f3ece2;
+    margin-right: 30px;
+    border-radius: 10px;
+  }
+
+  &__text {
+    color: $primary-color;
+  }
+
+  &__features {
+    display: flex;
+    column-gap: 1.5rem;
+  }
+
+  &__feature {
+    padding: 4px 10px;
+    border-radius: 20px;
+    background-color: rgb(235, 231, 231);
+    font-size: small;
+    font-weight: 500;
+    transition: transform 0.9s ease;
+  }
+}
+
+
+.amenities-endcard {
+  @include flex-vertical(1rem);
+  background-color: rgba(194, 181, 141, 0.1);
+  width: 76%;
+  border-radius: 6px;
+  padding: 40px 5px;
+
+  &__title {
+    color: $text-color;
+
+    @media(max-width:450px) {
+      font-size: 15px;
+    }
+  }
+
+  &__text {
+    color: $text-color;
+    @media(max-width:450px){
+            font-size: 11px;
+            padding: 0 20px;
+        }
+  }
+
+  &__btn {
+    width: 300px;
+    background-color: $primary-color;
+    color: white;
+    border-radius: 30px;
+    padding: 15px 20px;
+    border: white;
+    transition: all 0.4s ease;
+    
+    @media(max-width:450px){
+            width: 200px;
+        }
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

@@ -1,0 +1,1138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="css/main.css"> -->
+    <link rel="stylesheet" href="main_scss/style.css">
+
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <!-- section 1 -->
+        <section id="section1" class="section">
+            <video autoplay muted loop id="bg-video">
+                <source src="media/hotel.mp4" type="video/mp4" />
+            </video>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid box">
+                    <a class="navbar-brand" href="#">Luxury Hotel</a>
+                    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Rooms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Amenities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Location</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Rooms Details</a></li>
+                                    <li><a class="dropdown-item" href="#">Restaurants</a></li>
+                                    <li><a class="dropdown-item" href="#">Offers</a></li>
+                                    <li><a class="dropdown-item" href="#">Events</a></li>
+                                    <li><a class="dropdown-item" href="#">Gallery</a></li>
+                                    <li><a class="dropdown-item" href="#">Booking</a></li>
+                                    <li><a class="dropdown-item" href="#">Terms Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Privacy Page</a></li>
+                                    <li><a class="dropdown-item" href="#">404 Page</a></li>
+                                    <li><a class="dropdown-item" href="#">Starter Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    English
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">French</a></li>
+                                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                                    <li><a class="dropdown-item" href="#">Germain</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <button class="book btn  rounded-4 " type="submit">Book now</button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="heading text-white">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="hero-text text-center aos-init aos-animate" data-aos="fade-up"
+                                data-aos-delay="100">
+                                <h1>Discover Elegance and Comfort</h1>
+                                <p class="hero-subtitle">Experience unparalleled luxury in the heart of the city with
+                                    world-class amenities and personalized service that exceeds every expectation.</p>
+
+                                <div class="hero-features aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                                    <div class="feature-item">
+                                        <i class="bi icon-color bi-star-fill"></i>
+                                        <span>5-Star Luxury</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="bi icon-color bi-geo-alt-fill"></i>
+                                        <span>Prime Location</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="bi icon-color bi-award-fill"></i>
+                                        <span>Award Winning</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="booking-card aos-init  aos-animate" data-aos="fade-up" data-aos-delay="300">
+                                <div class="card date-form hero-card ">
+                                    <div class="card-body">
+                                        <form action="" method="post">
+                                            <div class="row g-3">
+                                                <div class="col-xl-3">
+                                                    <label for="checkin" class="form-label">Check-in</label>
+                                                    <input type="date" class="form-control" id="checkin" name="checkin"
+                                                        required="">
+                                                </div>
+                                                <div class="col-xl-3">
+                                                    <label for="checkout" class="form-label">Check-out</label>
+                                                    <input type="date" class="form-control" id="checkout"
+                                                        name="checkout" required="">
+                                                </div>
+                                                <div class="col-xl-2">
+                                                    <label for="guests" class="form-label">Guests</label>
+                                                    <select class="form-select" id="guests" name="guests" required="">
+                                                        <option value="">Select</option>
+                                                        <option value="1">1 Guest</option>
+                                                        <option value="2">2 Guests</option>
+                                                        <option value="3">3 Guests</option>
+                                                        <option value="4">4+ Guests</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xl-2">
+                                                    <label for="rooms" class="form-label">Rooms</label>
+                                                    <select class="form-select" id="rooms" name="rooms" required="">
+                                                        <option value="">Select</option>
+                                                        <option value="1">1 Room</option>
+                                                        <option value="2">2 Rooms</option>
+                                                        <option value="3">3+ Rooms</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-xl-2">
+                                                    <label class="form-label d-block">&nbsp;</label>
+                                                    <button type="submit" class="btn search w-100">
+                                                        <i class="bi bi-search"></i>
+                                                        Search
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="hero-actions aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
+                                <a href="rooms.html" class="btn hero-btn1">
+                                    <i class="bi bi-house-door"></i>
+                                    Explore Rooms
+                                </a>
+                                <a href="amenities.html" class="btn hero-btn2">
+                                    <i class="bi bi-star"></i>
+                                    View Amenities
+                                </a>
+                            </div>
+
+                            <div class="hero-stats aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
+                                <div class="stat-item">
+                                    <div class="stat-number">
+                                        <span data-purecounter-start="0" data-purecounter-end="250"
+                                            data-purecounter-duration="0" class="purecounter">250</span>+
+                                    </div>
+                                    <div class="stat-label">Luxury Rooms</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">
+                                        <span data-purecounter-start="0" data-purecounter-end="15"
+                                            data-purecounter-duration="0" class="purecounter">15</span>+
+                                    </div>
+                                    <div class="stat-label">Years Experience</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">
+                                        <span data-purecounter-start="0" data-purecounter-end="98"
+                                            data-purecounter-duration="0" class="purecounter">98</span>%
+                                    </div>
+                                    <div class="stat-label">Guest Satisfaction</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">
+                                        <span data-purecounter-start="0" data-purecounter-end="24"
+                                            data-purecounter-duration="0" class="purecounter">24</span>/7
+                                    </div>
+                                    <div class="stat-label">Concierge Service</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section2 -->
+        <section id="section2">
+            <div class="discover-box">
+                <div class="discover-image">
+                    <div class="discover-img1">
+                        <img src="media/showcase-3.webp" alt="">
+                    </div>
+                    <div class="discover-img2">
+                        <img src="media/room-8.webp" alt="">
+                    </div>
+                </div>
+                <div class="discover-text">
+                    <h5>Heritage & Excellence</h2>
+                        <h2>Discover the Pinnacle of Hospitality
+                    </h5>
+                    <p>Experience unparalleled luxury at Heritage Grand Hotel, where timeless elegance meets
+                        modern sophistication. For over four decades, we have crafted memorable experiences through
+                        exceptional service and attention to every detail.</p>
+                    <p>Our commitment to excellence has earned recognition from prestigious hospitality awards
+                        worldwide,
+                        making us the preferred choice for discerning guests seeking both comfort and distinction.</p>
+                    <div class="discover-features">
+                        <div class="discover-feature-box1">
+                            <div class="discover-feature-box">
+                                <i class="bi icon-color discover-icon bi-building"></i>
+                                <div>
+                                    <h>Premium Suites</h>
+                                    <p>Luxuriously appointed accommodations with panoramic city views</p>
+                                </div>
+                            </div>
+                            <div class="discover-feature-box">
+                                <i class="bi icon-color discover-icon bi-star-fill"></i>
+                                <div>
+                                    <h>Award Winning Service</h>
+                                    <p>Personalized hospitality that exceeds every expectation</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="discover-feature-box2">
+                            <div class="discover-feature-box">
+                                <i class="bi icon-color discover-icon bi-geo-alt-fill"></i>
+                                <div>
+                                    <h>Prime Location</h>
+                                    <p>Situated in the heart of the city's cultural district</p>
+                                </div>
+                            </div>
+                            <div class="discover-feature-box">
+                                <i class="bi icon-color discover-icon bi-building"></i>
+                                <div>
+                                    <h>Michelin Dining</h>
+                                    <p>Exceptional culinary experiences by renowned chefs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="discover-btn">Discover Our Story -></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- section3 -->
+        <section id="section3">
+            <div class="rooms-box">
+                <h2>Rooms</h2>
+                <div class="hr"></div>
+                <p class="roombox-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <div class="rooms-card1">
+
+                    <div class="card room-book-card">
+                        <div class="bookcard-imagebox" style="overflow: hidden; height: 320px;">
+                            <img src="media/room-7.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <div class="title-star-box">
+                                <h5 class="card-title book-card-title">Luxury Presidential Suite</h5>
+                                <div class="ratings">
+                                    <i class="stars bi bi-star-fill"></i>
+                                    <i class="stars bi bi-star-fill"></i>
+                                    <i class="stars bi bi-star-fill"></i>
+                                    <i class="stars bi bi-star-fill"></i>
+                                    <i class="stars bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="card-text book-card-text">Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui
+                                officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis.</p>
+                            <div class="book-card-feature-box">
+                                <i class="book-card-feature bi bi-wifi"></i>
+                                <i class="book-card-feature bi bi-tv"></i>
+                                <i class="book-card-feature bi bi-safe"></i>
+                                <i class="book-card-feature bi bi-telephone"></i>
+                                <i class="book-card-feature bi bi-snow"></i>
+                                <i class="book-card-feature bi bi-cup-hot"></i>
+                            </div>
+                            <div class="book-card-price-box">
+                                <div class="book-card-price">
+                                    $499<span style="font-size: 15px;font-weight: 500;">per night</span>
+                                </div>
+                                <a href="#" class=" book-card-btn">Book now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rooms-card-group">
+
+                        <div class="card mb-3 group-card">
+                            <div class="row g-0">
+                                <div class="col-md-4 group-card__image-box">
+                                    <img src="media/room-11.webp" class="img-fluid rounded-start group-card__image"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="group-card__card-title">Executive Business Suite</h5>
+                                        <p class="group-card__card-text">
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </p>
+                                        <div class="group-card__features">
+                                            <div class="group-card__feature-box">
+                                                <i class="bi bi-wifi"></i>
+                                                Wifi
+                                            </div>
+                                            <div class="group-card__feature-box">
+                                                <i class="bi bi-building"></i>
+                                                Balcony
+                                            </div>
+                                        </div>
+                                        <div class="group-card__price-box">
+                                            <div class="group-card__price">
+                                                $199<span style="font-size: 15px;font-weight: 500;">/night</span>
+                                            </div>
+                                            <a href="#" class="btn  group-card__btn">Reserve</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 group-card">
+                            <div class="row g-0">
+                                <div class="col-md-4 group-card__image-box">
+                                    <img src="media/room-16.webp" class="img-fluid rounded-start group-card__image"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="group-card__card-title">
+                                            Ocean View Double Room
+                                        </h5>
+                                        <p class="group-card__card-text">
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </p>
+                                        <div class="group-card__features">
+                                            <div class="group-card__feature-box">
+                                                <i class="bi bi-wifi"></i>
+                                                Wifi
+                                            </div>
+                                            <div class="group-card__feature-box">
+                                                <i class="bi bi-building"></i>
+                                                Balcony
+                                            </div>
+                                        </div>
+                                        <div class="group-card__price-box">
+                                            <div class="group-card__price">
+                                                $199<span style="font-size: 15px;font-weight: 500;">/night</span>
+                                            </div>
+                                            <a href="#" class="btn group-card__btn">Reserve</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mb-3 group-card">
+                            <div class="row g-0">
+                                <div class="col-md-4 group-card__image-box">
+                                    <img src="media/room-9.webp" class="img-fluid rounded-start group-card__image"
+                                        alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="group-card__card-title">Family Connecting Rooms</h5>
+                                        <p class="group-card__card-text">
+                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                            eu fugiat nulla pariatur.
+                                        </p>
+                                        <div class="group-card__features">
+                                            <div class="group-card__feature-box">
+                                                <i class="bi bi-wifi"></i>
+                                                Wifi
+                                            </div>
+                                            <div class="group-card__feature-box">
+                                                <i class="bi bi-building"></i>
+                                                Balcony
+                                            </div>
+                                        </div>
+                                        <div class="group-card__price-box">
+                                            <div class="group-card__price">
+                                                $199<span style="font-size: 15px;font-weight: 500;">/night</span>
+                                            </div>
+                                            <a href="#" class="btn  group-card__btn">Reserve</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="rooms-card2">
+                    <div class="card square-card" style="width: 20rem;">
+                        <div class="square-card__image-box">
+                            <img src="media/room-1.webp" class="card-img-top square-card__image" alt="...">
+                            <div class="square-card__screen">&#8594</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title square-card__title">Superior garden view</h5>
+                            <div class="square-card__price-box">
+                                $199<span style="font-size: 14px;font-weight: 500;">/night</span>
+                            </div>
+                            <div class="square-card__features">
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card square-card" style="width: 20rem;">
+                        <div class="square-card__image-box">
+                            <img src="media/room-3.webp" class="card-img-top square-card__image" alt="...">
+                            <div class="square-card__screen">&#8594</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title square-card__title">Classic double room</h5>
+                            <div class="square-card__price-box">
+                                $199<span style="font-size: 14px;font-weight: 500;">/night</span>
+                            </div>
+                            <div class="square-card__features">
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card square-card" style="width: 20rem;">
+                        <div class="square-card__image-box">
+                            <img src="media/room-5.webp" class="card-img-top square-card__image" alt="...">
+                            <div class="square-card__screen">&#8594</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title square-card__title">Delux king suite</h5>
+                            <div class="square-card__price-box">
+                                $199<span style="font-size: 14px;font-weight: 500;">/night</span>
+                            </div>
+                            <div class="square-card__features">
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card square-card" style="width: 20rem;">
+                        <div class="square-card__image-box">
+                            <img src="media/room-7.webp" class="card-img-top square-card__image" alt="...">
+                            <div class="square-card__screen">&#8594</div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title square-card__title">Penthouse suite</h5>
+                            <div class="square-card__price-box">
+                                $199<span style="font-size: 14px;font-weight: 500;">/night</span>
+                            </div>
+                            <div class="square-card__features">
+                                <i class="bi bi-wifi"></i>
+                                <i class="bi bi-tv"></i>
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="square-card__btn">Discover All Accomodations</button>
+            </div>
+        </section>
+
+        <!-- section4 -->
+        <div id="section4">
+            <div class="amenities">
+                <h2 class="amenities__heading">Amenities</h2>
+                <div class="amenities__hr"></div>
+                <p class="amenities__desc">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
+                    velit</p>
+                <div class="amenities__card-box">
+                    <div class="amenities-card">
+                        <h2 class="amenities-card__heading">
+                            <i class="bi bi-water amenities-card__icon"></i>
+                            Rooftop Pool & Terrace
+                        </h2>
+                        <p class="amenities-card__text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+                        <div class="amenities-card__features">
+                            <p class="amenities-card__feature">24/7 Access</p>
+                            <p class="amenities-card__feature">Pool Bar</p>
+                        </div>
+                    </div>
+                    <div class="amenities-card">
+                        <h2 class="amenities-card__heading">
+                            <i class="bi bi-heart-pulse amenities-card__icon"></i>
+                            Luxury Spa Center
+                        </h2>
+                        <p class="amenities-card__text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+                        <div class="amenities-card__features">
+                            <p class="amenities-card__feature">sauna</p>
+                            <p class="amenities-card__feature">massage</p>
+                        </div>
+                    </div>
+                    <div class="amenities-card">
+                        <h2 class="amenities-card__heading">
+                            <i class="bi bi-cup-hot amenities-card__icon"></i>
+                            Gourmet Restaurant
+                        </h2>
+                        <p class="amenities-card__text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+                        <div class="amenities-card__features">
+                            <p class="amenities-card__feature">Room Service</p>
+                            <p class="amenities-card__feature">Live Music</p>
+                        </div>
+                    </div>
+                    <div class="amenities-card">
+                        <h2 class="amenities-card__heading">
+                            <i class="bi bi-bicycle amenities-card__icon"></i>
+                            Modern Fitness Studio
+                        </h2>
+                        <p class="amenities-card__text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+                        <div class="amenities-card__features">
+                            <p class="amenities-card__feature">Personal Training</p>
+                            <p class="amenities-card__feature">Yoga Classes</p>
+                        </div>
+                    </div>
+                    <div class="amenities-card">
+                        <h2 class="amenities-card__heading">
+                            <i class="bi bi-wifi amenities-card__icon"></i>
+                            High-Speed Internet
+                        </h2>
+                        <p class="amenities-card__text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+                        <div class="amenities-card__features">
+                            <p class="amenities-card__feature">Conference Room</p>
+                            <p class="amenities-card__feature">Business Center</p>
+                        </div>
+                    </div>
+                    <div class="amenities-card">
+                        <h2 class="amenities-card__heading">
+                            <i class="bi bi-shield-check amenities-card__icon"></i>
+                            24/7 Security Service
+                        </h2>
+                        <p class="amenities-card__text">
+                            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti.
+                        </p>
+                        <div class="amenities-card__features">
+                            <p class="amenities-card__feature">Valet Parking</p>
+                            <p class="amenities-card__feature">Conclerge</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="amenities-endcard">
+                    <h2 class="amenities-endcard__title">Experience Premium Comfort</h2>
+                    <p class="amenities-endcard__text">Discover all the exceptional facilities we offer to make your
+                        stay unforgettable</p>
+                    <button class="amenities-endcard__btn">Explore All Amenities</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- section5 -->
+        <div id="section5">
+            <div class="testimonials">
+                <h2 class="testimonials__title">Testimonials</h2>
+                <div class="testimonials__hr"></div>
+                <p class="testimonials__text">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+                    consectetur velit</p>
+                <div class="testimonials__carousel-box">
+                    <div class="testimonials__carousel">
+                        <div class="card testimonial-card" style="width: 25rem;height:25.5rem;">
+                            <div class="testimonial-card__image-box">
+                                <img src="media/person-f-6.webp" class="card-img-top" alt="...">
+                            </div>
+                            <div class="testimonial-card__stars">
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                            </div>
+                            <p class="testimonial-card__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque ducimus
+                                accusantium exercitationem, natus repellendus. Velit deleniti expedita reiciendis.
+                            </p>
+                            <div class="testimonial-card__info">
+                                <p class="testimonial-card__name">
+                                    Dwayne Smith
+                                </p>
+                                <p class="testimonial-card__designation">
+                                    Frontend Developer
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card testimonial-card" style="width: 25rem;height:25.5rem;">
+                            <div class="testimonial-card__image-box">
+                                <img src="media/person-m-8.webp" class="card-img-top" alt="...">
+                            </div>
+                            <div class="testimonial-card__stars">
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                            </div>
+                            <p class="testimonial-card__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque ducimus
+                                accusantium exercitationem, natus repellendus. Velit deleniti expedita reiciendis.
+                            </p>
+                            <div class="testimonial-card__info">
+                                <p class="testimonial-card__name">
+                                    Diogo Joto
+                                </p>
+                                <p class="testimonial-card__designation">
+                                    Gamer
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card testimonial-card" style="width: 25rem;height:25.5rem;">
+                            <div class="testimonial-card__image-box">
+                                <img src="media/person-f-10.webp" class="card-img-top" alt="...">
+                            </div>
+                            <div class="testimonial-card__stars">
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                            </div>
+                            <p class="testimonial-card__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque ducimus
+                                accusantium exercitationem, natus repellendus. Velit deleniti expedita reiciendis.
+                            </p>
+                            <div class="testimonial-card__info">
+                                <p class="testimonial-card__name">
+                                    Bernado Silva
+                                </p>
+                                <p class="testimonial-card__designation">
+                                    UI/Ux
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card testimonial-card" style="width: 25rem;height:25.5rem;">
+                            <div class="testimonial-card__image-box">
+                                <img src="media/person-m-12.webp" class="card-img-top" alt="...">
+                            </div>
+                            <div class="testimonial-card__stars">
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                            </div>
+                            <p class="testimonial-card__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque ducimus
+                                accusantium exercitationem, natus repellendus. Velit deleniti expedita reiciendis.
+                            </p>
+                            <div class="testimonial-card__info">
+                                <p class="testimonial-card__name">
+                                    Steven Smith
+                                </p>
+                                <p class="testimonial-card__designation">
+                                    Backend Developer
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card testimonial-card" style="width: 25rem;height:25.5rem;">
+                            <div class="testimonial-card__image-box">
+                                <img src="media/person-f-12.webp" class="card-img-top" alt="...">
+                            </div>
+                            <div class="testimonial-card__stars">
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                                <i class="bi bi-star-fill testimonial-card__star"></i>
+                            </div>
+                            <p class="testimonial-card__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque ducimus
+                                accusantium exercitationem, natus repellendus. Velit deleniti expedita reiciendis.
+                            </p>
+                            <div class="testimonial-card__info">
+                                <p class="testimonial-card__name">
+                                    King Paul
+                                </p>
+                                <p class="testimonial-card__designation">
+                                    AI/ML
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section6 -->
+        <div id="section6">
+            <div class="offer">
+                <h2 class="offer__title">Offers</h2>
+                <div class="offer__hr"></div>
+                <p class="offer__text">
+                    Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+                <div class="offer__card-box">
+                    <div class="card offer-card" style="width: 27rem;">
+                        <div class="offer-card__image-box">
+                            <img src="media/showcase-3.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title offer-card__title">Weekend Getaway</h5>
+                            <p class="card-text offer-card__text">Escape the ordinary with our exclusive weekend
+                                package. Includes complimentary breakfast and late checkout until 2 PM.</p>
+                            <div class="offer-card__price">
+                                <span class="offer-card__line-through">$299</span>
+                                <span class="offer-card__main-price">$224</span>
+                                <span class="offer-card__price-text">per night</span>
+                            </div>
+                            <div class="offer-card__date-box">
+                                <i class="bi bi-calendar-check"></i>
+                                Valid until Dec 31, 2024
+                            </div>
+                            <a href="#" class="btn btn-primary offer-card__btn">Book Now</a>
+                        </div>
+                    </div>
+
+                    <div class="card offer-card" style="width: 27rem;">
+                        <div class="offer-card__image-box">
+                            <img src="media/showcase-7.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title offer-card__title">Extended Stay Deal</h5>
+                            <p class="card-text offer-card__text">Stay 5 nights or more and enjoy significant savings.
+                                Perfect for business
+                                travelers and extended vacations with premium amenities.</p>
+                            <div class="offer-card__price">
+                                <span class="offer-card__line-through">$189</span>
+                                <span class="offer-card__main-price">$149</span>
+                                <span class="offer-card__price-text">per night</span>
+                            </div>
+                            <div class="offer-card__date-box">
+                                <i class="bi bi-calendar-check"></i>
+
+                                Book by Jan 15, 2025
+                            </div>
+                            <a href="#" class="btn btn-primary offer-card__btn">Reserve Today</a>
+                        </div>
+                    </div>
+
+                    <div class="card offer-card" style="width: 27rem;">
+                        <div class="offer-card__image-box">
+                            <img src="media/showcase-11.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title offer-card__title">Advance Booking</h5>
+                            <p class="card-text offer-card__text">Plan ahead and save more! Book your stay 30 days in
+                                advance and enjoy exclusive
+                                rates with free cancellation up to 7 days. great!</p>
+                            <div class="offer-card__price">
+                                <span class="offer-card__line-through">$249</span>
+                                <span class="offer-card__main-price">$199</span>
+                                <span class="offer-card__price-text">per night</span>
+                            </div>
+                            <div class="offer-card__date-box">
+                                <i class="bi bi-calendar-check"></i>
+                                Available year-round
+                            </div>
+                            <a href="#" class="btn btn-primary offer-card__btn">Book Early</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-box">
+                    <div class="offer-box__info">
+                        <h2 class="offer-box__title">Limited Time Offer</h2>
+                        <p class="offer-box__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in
+                            reprehenderit.</p>
+                    </div>
+                    <a href="#" class="offer-box__btn">Claim Offer</a>
+                </div>
+            </div>
+            <div class="offer2">
+                <div class="offer-bookbox">
+                    <div class="offer-bookbox__info">
+                        <h1 class="offer-bookbox__title">Experience Luxury Like Never Before</h1>
+                        <p class="offer-bookbox__text">Book your dream getaway today and enjoy exclusive
+                            amenities, world-class service, and unforgettable memories. Limited availability for our
+                            premium suites.</p>
+                    </div>
+                    <div class="offer-bookbox__btns">
+                        <div class="offer-bookbox__btns-box">
+                            <a href="#" class="offer-bookbox__btn1"><i class="bi bi-calendar-check"></i>Book Now</a>
+                            <p class="offer-bookbox__btn2">Save up to 25%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="offer-featurebox">
+                    <div class="offer-featurebox__feature">
+                        <i class="bi bi-shield-check"></i>
+                        <h6>Free Cancellation</h6>
+                        <p>Cancel up to 24 hours before check-in</p>
+                    </div>
+                    <div class="offer-featurebox__feature">
+                        <i class="bi bi-award"></i>
+                        <h6>Best Rate Guarantee</h6>
+                        <p>We'll match any lower rate you find</p>
+                    </div>
+                    <div class="offer-featurebox__feature">
+                        <i class="bi bi-headset"></i>
+                        <h6>24/7 Support</h6>
+                        <p>Round-the-clock customer assistance</p>
+                    </div>
+                    <div class="offer-featurebox__feature">
+                        <i class="bi bi-lock"></i>
+                        <h6>Secure Booking</h6>
+                        <p>Your payment information is protected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- section7 -->
+        <div id="section7">
+
+            <div class="event">
+                <h2 class="event__title">Events</h2>
+                <div class="event__hr"></div>
+                <p class="event__text">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit
+                </p>
+
+                <div class="event__card-box">
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 event__inside-box">
+                        <div class="col">
+                            <div class="card event__card">
+                                <img src="media/event1.jpg" class="card-img-top" alt="...">
+                                <div class="card-body event__info">
+                                    <h5 class="card-title event__title">Elegant Weddings</h5>
+                                    <p class="card-text event__text">Create unforgettable moments in our stunning
+                                        ballroom</p>
+                                    <a href="#" class="event__btn"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card event__card">
+                                <img src="media/event3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body event__info">
+                                    <h5 class="card-title event__title">Corporate Meetings</h5>
+                                    <p class="card-text event__text">Professional spaces for productive business
+                                        gatherings</p>
+                                    <a href="#" class="event__btn"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card event__card">
+                                <img src="media/event3.jpg" class="card-img-top" alt="...">
+                                <div class="card-body event__info">
+                                    <h5 class="card-title event__title">Private Celebrations</h5>
+                                    <p class="card-text event__text">ntimate venues perfect for special occasions</p>
+                                    <a href="#" class="event__btn"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card event__card">
+                                <img src="media/event4.jpg" class="card-img-top" alt="...">
+                                <div class="card-body event__info">
+                                    <h5 class="card-title event__title">Conference Facilities</h5>
+                                    <p class="card-text event__text">State-of-the-art technology for successful
+                                        conferences</p>
+                                    <a href="#" class="event__btn"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card event__card">
+                                <img src="media/event5.jpg" class="card-img-top" alt="...">
+                                <div class="card-body event__info">
+                                    <h5 class="card-title event__title">Social Gatherings</h5>
+                                    <p class="card-text event__text">Versatile spaces for memorable social events</p>
+                                    <a href="#" class="event__btn"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card event__card">
+                                <img src="media/event6.jpg" class="card-img-top" alt="...">
+                                <div class="card-body event__info">
+                                    <h5 class="card-title event__title">Corporate Retreats</h5>
+                                    <p class="card-text event__text">Inspiring environments for team building and
+                                        planning</p>
+                                    <a href="#" class="event__btn"><i class="bi bi-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- section8 -->
+        <div id="section8">
+
+            <div class="location">
+                <h2 class="location__title">
+                    Location & Activities
+                </h2>
+                <div class="location__hr"></div>
+                <p class="location__text">Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur
+                    velit</p>
+                <div class="location__card-box">
+                    <div class="card location-card">
+                        <div class="location-card__image-box">
+                            <img src="media/location-1.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body location-card__info">
+                            <h5 class="card-title location-card__title">Museums & Culture</h5>
+                            <p class="card-text location-card__text">Explore world-class museums and cultural landmarks
+                                just minutes from
+                                your doorstep. From contemporary art to historical exhibitions.</p>
+                            <ul>
+                                <li>Metropolitan Museum - 0.8 miles </li>
+                                <li>Art Gallery District - 1.2 miles</li>
+                                <li>Cultural Center - 0.5 miles</li>
+                            </ul>
+                            <a href="#" class="btn location-card__btn">Explore Area</a>
+                        </div>
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="card location-card">
+                        <div class="location-card__image-box">
+                            <img src="media/location-2.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body location-card__info">
+                            <h5 class="card-title location-card__title">Shopping & Dining</h5>
+                            <p class="card-text location-card__text">Indulge in premier shopping and culinary
+                                experiences. From boutique
+                                stores to award-winning restaurants in the entertainment district.</p>
+                            <ul>
+                                <li>Grand Shopping Mall - 0.3 miles </li>
+                                <li>Restaurant Row - 0.6 miles</li>
+                                <li>Night Market - 0.9 miles</li>
+                            </ul>
+                            <a href="#" class="btn location-card__btn">View Restaurants</a>
+                        </div>
+                        <i class="bi bi-bag-check"></i>
+                    </div>
+                    <div class="card location-card">
+                        <div class="location-card__image-box">
+                            <img src="media/location-10.webp" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body location-card__info">
+                            <h5 class="card-title location-card__title">Business Hub</h5>
+                            <p class="card-text location-card__text">Strategically located in the heart of the financial
+                                district. Perfect
+                                for business travelers with easy access to corporate centers.</p>
+                            <ul>
+                                <li>Convention Center - 0.4 miles</li>
+                                <li>Financial District - 0.7 miles</li>
+                                <li>Business Park - 1.1 miles</li>
+                            </ul>
+                            <a href="#" class="btn location-card__btn">Business Services</a>
+                        </div>
+                        <i class="bi bi-building"></i>
+                    </div>
+                </div>
+                <div class="location__carousel">
+
+                    <div class="location-carousel">
+                        <div class="location-carousel__card">
+                            <img src="media/gallery-1.webp" alt="location Image" class="location-carousel__image">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <div class="location-carousel__card">
+                            <img src="media/gallery-3.webp" alt="location Image" class="location-carousel__image">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <div class="location-carousel__card">
+                            <img src="media/gallery-5.webp" alt="location Image" class="location-carousel__image">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <div class="location-carousel__card">
+                            <img src="media/gallery-7.webp" alt="location Image" class="location-carousel__image">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <div class="location-carousel__card">
+                            <img src="media/gallery-8.webp" alt="location Image" class="location-carousel__image">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <div class="location-carousel__card">
+                            <img src="media/gallery-12.webp" alt="location Image" class="location-carousel__image">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <div class="location-carousel__card">
+                            <img src="media/gallery-15.webp" alt="location Image" class="location-carousel__image">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                        <div class="location-carousel__card">
+                            <img src="media/gallery-18.webp" alt="location Image" class="location-carousel__image">
+                            <i class="bi bi-eye"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="location__btn">
+                    <i class="bi bi-collection"></i>
+                    Discover Our Full Gallery
+                </div>
+            </div>
+
+        </div>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer1">
+                <div class="contacts">
+                    <div class="contacts__heading">Luxury Hotel</div>
+                    <div class="contacts__text">
+                        <p>A108 Adam Street</p>
+                        <p>New York, NY 535022</p>
+                        <p>Phone: +1 5589 55488 55</p>
+                        <p>Email: info@example.com</p>
+                    </div>
+                </div>
+                <div class="links-box">
+                    <div class="links-box__column">
+                        <div class="links_box__title">Useful links</div>
+                        <p class="links_box__text">Home</p>
+                        <p class="links-box__text">About us</p>
+                        <p class="links-box__text">Services</p>
+                        <p class="links-box__text">Terms of Service</p>
+                        <p class="links-box__text">Privacy policy</p>
+
+                    </div>
+                    <div class="links-box__column">
+                        <div class="links_box__heading">our services</div>
+                        <p class="links_box__text">Web Design</p>
+                        <p class="links-box__text">Web Development</p>
+                        <p class="links-box__text">Product Managment</p>
+                        <p class="links-box__text">Marketing</p>
+                        <p class="links-box__text">Grapic Design</p>
+
+                    </div>
+                    <div class="links-box__column">
+                        <div class="links_box__heading">Nobis illum</div>
+                        <p class="links_box__text">Ipsam</p>
+                        <p class="links-box__text">Laudantium dolorum</p>
+                        <p class="links-box__text">Dinera</p>
+                        <p class="links-box__text">Trodelas</p>
+                        <p class="links-box__text">Flexo</p>
+
+                    </div>
+                    <div class="links-box__column">
+                        <div class="links_box__heading">Hic solutasetp</div>
+                        <p class="links_box__text">Molestiae accusamus iure</p>
+                        <p class="links-box__text">Excepturi dignissimos</p>
+                        <p class="links-box__text">Suscipit distinctio</p>
+                        <p class="links-box__text">Delexa</p>
+                        <p class="links-box__text">Sit quas consectetur</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="footer2">
+                <div class="footer2__text">
+                    <p class="footer2__copyright">© Copyright MyWebsite. All Rights Reserved</p>
+                    <p>Designed by <a href="https://bootstrapmade.com" target="_blank">BootstrapMade</a></p>
+                </div>
+                <div class="footer2__icons">
+                    <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
