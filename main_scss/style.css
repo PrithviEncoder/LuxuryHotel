@@ -1,8 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #F5F4F1;
-}
-body body {
   overflow-x: hidden;
+}
+
+main .scroll-up {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  background-color: #917A5A;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 
 #section1 {
@@ -269,6 +285,13 @@ body body {
 .discover-text {
   width: 770px;
 }
+@media (max-width: 450px) {
+  .discover-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .discover-text h5 {
   color: #917A5A;
 }
@@ -305,6 +328,7 @@ body body {
 }
 
 #discover-btn {
+  margin: auto;
   width: 200px;
   padding: 15px 20px;
   background-color: #917A5A;
