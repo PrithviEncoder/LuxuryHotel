@@ -1,6 +1,11 @@
 @use './variable' as *;
 @use './mixin' as *;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 html {
   scroll-behavior: smooth;
@@ -28,7 +33,7 @@ main .scroll-up{
 #section1 {
   position: relative;
   width: 100%;
-  min-height: 100vh; // ✅ grows with content if needed
+  min-height: 100vh; // grows with content if needed
   overflow: hidden;
 }
 .navbar-toggler {
